@@ -45,7 +45,7 @@ python -m unidic download
 
 `mkmamodel.py` を実行し、2つのマルコフ連鎖モデルデータ `giin_model_state4.json` (議員発言シミュレーション用) と `gyosei_model_state4.json` (行政答弁シミュレーション用) が作成されたことを確認する。
 
-なお、`mkmamodels.py` 中の関数 `make_giin_gyosei_model()` の引数 `state_size` を変更することで、構築されるマルコフ連鎖の階数 (状態履歴数) を変更することができる (デフォルト: 4)。
+なお、`mkmamodel.py` 中の関数 `make_giin_gyosei_model()` の引数 `state_size` を変更することで、構築されるマルコフ連鎖の階数 (状態履歴数) を変更することができる (デフォルト: 4)。
 
 ## 実行
 
