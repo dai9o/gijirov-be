@@ -1,8 +1,7 @@
-import re
-import unicodedata
+import os
+
 import MeCab
 import unidic
-import os
 
 UNIDIC_DIR = unidic.DICDIR.replace(os.sep, '/')
 m = MeCab.Tagger('-d ' + UNIDIC_DIR)  # 形態素出力
