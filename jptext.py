@@ -47,6 +47,8 @@ class JPText(Text):
         **kwargs
     ):
         """
+        A modified version of `markovify.Text` for Japanese text.
+
         input_text: A string.
         state_size: An integer, indicating the number of words in the model's
                     state.
@@ -324,9 +326,9 @@ class JPText(Text):
                                  strict: bool = True, tolerate_beginning: bool = False,
                                  **kwargs):
         """
-        Tries making a sentence that begins with `beginning` string,
-        which should be a string of one to `self.state` words known
-        to exist in the corpus.
+        Tries making a sentence that begins with `beginning` string/tuple,
+        which should be a string/tuple of strings of one to `self.state` words
+        known to exist in the corpus.
 
         If strict == True, then markovify will draw its initial inspiration
         only from sentences that start with the specified word/phrase.
