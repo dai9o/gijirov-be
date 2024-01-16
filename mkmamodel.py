@@ -39,7 +39,7 @@ if __name__ == "__main__":
     )
 
     # JSON ファイルとして保存
-    giin_model_filename = "giin_model_state{giin_model.state_size}.json"
+    giin_model_filename = f"giin_model_state{giin_model.state_size}.json"
     gyosei_model_filename = f"gyosei_model_state{gyosei_model.state_size}.json"
 
     with open(giin_model_filename, "w", newline="\n") as f:
