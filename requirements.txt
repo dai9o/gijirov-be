@@ -1,0 +1,5 @@
+markovify
+mecab-python3
+unidic
+flask
+flask_cors
